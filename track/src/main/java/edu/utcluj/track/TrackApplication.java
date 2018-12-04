@@ -42,7 +42,7 @@ public class TrackApplication {
         return new DataSourceTransactionManager(dataSource());
     }
 
-    //for swagger: http://localhost:8085/swagger-ui.html
+    //for swagger: http://localhost:8085/swaghtmlger-ui.
     @Bean
     public Docket apiTest() {
         return new Docket(DocumentationType.SWAGGER_2).select()

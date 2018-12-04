@@ -1,6 +1,7 @@
 package edu.utcluj.track.position;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.Column;
@@ -17,6 +18,7 @@ import java.util.Date;
  * @since 18.10.2016
  */
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Position {
     @Id
     @GeneratedValue

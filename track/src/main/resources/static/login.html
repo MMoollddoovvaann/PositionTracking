@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>User Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/log.js"></script>
+</head>
+<body>
+<h1 align="center">User Login</h1>
+
+<div id align="center">
+    <table align="center">
+        <tr>
+            <td><b>UserName</b></td>
+            <td><input type="text" id="username" size="35" class="text"></td>
+        </tr>
+        <tr>
+            <td><b>Password</b></td>
+            <td><input type="text" id="password" size="35" class="text"
+                       onkeydown="if (event.keyCode == 13) getUser()"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td align="left"><input type="button" id="sign_in_button" size="35" value="SignIn"
+                                    onclick=goToPage('signing.html')></td>
+            <td align="right"><input type="button" name="login_button" size="35" value="Login"
+                                     onclick=getUser()></td>
+        </tr>
+    </table>
+</div>
+
+<div id="result" align="center">
+    <h2>Results</h2>
+</div>
+
+</body>
+</html>
